@@ -1,0 +1,30 @@
+﻿@model CondS.PIM.Modelo.usuario
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPadrao.cshtml";
+}
+
+<h2>Teste</h2>
+<!--Mesma coisa que o form em html-->
+<fieldset>
+    <legend>Login do usuario </legend>
+    @using (Html.BeginForm())
+    {
+        <div >
+            <!--Input-->
+            @Html.LabelFor(Model => Model.Usuario)
+            @Html.TextBoxFor(Model => Model.Usuario, new { @class ="form-control", placeholder ="Digite o nome do usuario "})
+        </div>
+        <div>
+            @Html.LabelFor(Model => Model.Senha)
+            @Html.PasswordFor(Model => Model.Usuario, new { @class = "form-control", placeholder = "Informe a senha  "})
+
+        </div>
+        <div>
+            @Html.LabelFor(Model => Model.Tipo)
+            @Html.TextBoxFor(Model => Model.Tipo, new{ @class = "form-control", placeholder = "Informe o tipo"})
+
+        </div>
+    }
+</fieldset>
+
