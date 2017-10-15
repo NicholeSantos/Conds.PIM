@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CondS.PIM.Modelo
 {
-    public class usuario
+    public class usuarioMOD
     {
         public int IdUsuario { get; set; }
         public string Usuario { get; set; }

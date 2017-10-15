@@ -53,6 +53,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -74,6 +77,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CondS.PIM.DataAccess\CondS.PIM.DataAccess.csproj">
+      <Project>{4d5bc0c4-70ab-4f5a-bbbf-7d5da1f4571b}</Project>
+      <Name>CondS.PIM.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CondS.PIM.Modelo\CondS.PIM.Modelo.csproj">
+      <Project>{64d4d400-761d-4d92-b242-39b63fe32acb}</Project>
+      <Name>CondS.PIM.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CondS.PIM.Repositorio\CondS.PIM.Repositorio.csproj">
+      <Project>{e07f8b10-15cf-4fcb-a154-96b81964bf00}</Project>
+      <Name>CondS.PIM.Repositorio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

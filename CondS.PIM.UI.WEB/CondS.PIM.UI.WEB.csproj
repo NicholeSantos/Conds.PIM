@@ -44,6 +44,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -151,9 +157,17 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CondS.PIM.DataAccess\CondS.PIM.DataAccess.csproj">
+      <Project>{4d5bc0c4-70ab-4f5a-bbbf-7d5da1f4571b}</Project>
+      <Name>CondS.PIM.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CondS.PIM.Modelo\CondS.PIM.Modelo.csproj">
       <Project>{64d4d400-761d-4d92-b242-39b63fe32acb}</Project>
       <Name>CondS.PIM.Modelo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CondS.PIM.Repositorio\CondS.PIM.Repositorio.csproj">
+      <Project>{e07f8b10-15cf-4fcb-a154-96b81964bf00}</Project>
+      <Name>CondS.PIM.Repositorio</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

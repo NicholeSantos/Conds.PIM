@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CondS.PIM.Modelo;
+using CondS.PIM.Repositorio;
+using System;
 using System.Windows.Forms;
 
 namespace CondS.PIM.UI.DESKTOP
@@ -15,6 +10,18 @@ namespace CondS.PIM.UI.DESKTOP
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            usuarioMOD usuarioMOD = new usuarioMOD();
+            usuarioMOD.Usuario = "TEST DESKTOP";
+            usuarioMOD.Senha = "TESTE DESKTOP";
+            usuarioMOD.Tipo = "Teste";
+            usuarioREP usuarioREP = new usuarioREP();
+            usuarioREP.Cadastrar(usuarioMOD);
+
+
         }
     }
 }
