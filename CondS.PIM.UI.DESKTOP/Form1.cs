@@ -17,7 +17,7 @@ namespace CondS.PIM.UI.DESKTOP
             usuarioMOD usuarioMOD = new usuarioMOD();
             usuarioMOD.Usuario = "TEST DESKTOP";
             usuarioMOD.Senha = "TESTE DESKTOP";
-            usuarioMOD.Tipo = "Teste";
+            usuarioMOD.Tipo = "TestewINICUS";
             usuarioREP usuarioREP = new usuarioREP();
             usuarioREP.Cadastrar(usuarioMOD);
 

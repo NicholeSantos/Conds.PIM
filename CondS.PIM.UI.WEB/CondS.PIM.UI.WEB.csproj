@@ -100,6 +100,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\themes\style.css" />
+    <Content Include="Content\themes\styleLogin.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -110,10 +111,27 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="img\3835786416c9f4c6f09399d665415e2d.gif" />
+    <Content Include="img\AddUsuario.png" />
+    <Content Include="img\cadastro.png" />
+    <Content Include="img\capa.jpg" />
+    <Content Include="img\condominio.png" />
+    <Content Include="img\Criar.png" />
+    <Content Include="img\Estacionamento.png" />
+    <Content Include="img\facebook.png" />
+    <Content Include="img\Icone_editar.png" />
+    <Content Include="img\instagram.png" />
+    <Content Include="img\logotipochave.png" />
+    <Content Include="img\Portaria.png" />
+    <Content Include="img\ruido.png" />
+    <Content Include="img\Salvar %281%29.png" />
+    <Content Include="img\twitter.png" />
+    <Content Include="img\user-login.png" />
     <Content Include="Scripts\bootbox.js" />
     <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="img\.DS_Store" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
@@ -136,6 +154,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -145,6 +164,8 @@
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Usuario\Cadastrar.cshtml" />
+    <Content Include="Views\Usuario\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
