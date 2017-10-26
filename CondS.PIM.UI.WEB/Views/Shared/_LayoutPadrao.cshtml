@@ -8,13 +8,6 @@
 
     <!--SCRIPTS-->
     <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/jquery-3.2.1.slim.js"></script>
-    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
-    <script src="~/Scripts/jquery.maskedinput.min.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
-    <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script src="~/Scripts/bootbox.min.js"></script>
-    <script src="~/Scripts/jquery.maskedinput.min.js"></script>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/themes/style.css" rel="stylesheet" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -22,36 +15,9 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <!-- Header-->
-        <div class="navbar-header">
-         <!-- botao toggle-->
-         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
-          <span class="sr-only">Alterar navegação</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-         </button>
-           <ul class="nav navbar-nav navbar-left">
-               <li>@Html.ActionLink("CondS","Index","Home")</li>
-           </ul>
-         
-        </div>
-        <!-- Navbar -->
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li class="divisor" role="separator"></li>
-            <li>@Html.ActionLink("Cadastrar", "Cadastrar", "Usuario")</li>
-            <li><a href="">5</a></li>
-          </ul>
-        </div>
-      </div><!--/Container-->
-    </nav> <!-- Finaliza barra de navegação -->
-
+    <header>
+        @RenderPage("~/Views/Shared/_Topo.cshtml")
+    </header>
     <section id="recursos">
         <div class="container">
            <div class="row">
@@ -62,12 +28,8 @@
                </div>
             </div>
         </div>
-      
    </section>
-
-    
-    
-
-
+    <footer>
+    </footer>
 </body>
 </html>

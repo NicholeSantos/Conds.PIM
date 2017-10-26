@@ -9,13 +9,7 @@
 <head>
     <!--SCRIPTS-->
     <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/jquery-3.2.1.slim.js"></script>
-    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
-    <script src="~/Scripts/jquery.maskedinput.min.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
-    <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script src="~/Scripts/bootbox.min.js"></script>
-    <script src="~/Scripts/jquery.maskedinput.min.js"></script>
+
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/themes/styleLogin.css" rel="stylesheet" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -24,21 +18,19 @@
     <title>Login</title>
 </head>
 <body>
-    @using (Html.BeginForm("Index", "Home", new { @class = "" }))
-    {
-        <div class="container">
-            <div class="wrapper">
-                <form action="~/Views/Home/Index.cshtml" method="post" name="Login_Form" class="form-signin">
+    <div class="container">
+        <div class="wrapper">
+            @using (Html.BeginForm("Index", "Home", new { @class = "form-singin" }))
+            {
+
                     <h3 class="form-signin-heading">Bem Vindo ao CondS</h3>
                     <hr class="colorgraph"><br>
 
                     <input type="text" class="form-control" name="Login" placeholder="login" required="" autofocus="" />
                     <input type="password" class="form-control" name="Senha" placeholder="Senha" required="" />
                     <input type="submit" value="Login" class="btn btn-lg btn-primary btn-block " />
-                </form>
-
-            </div>
+            }
         </div>
-    }
+    </div>
 </body>
 </html>

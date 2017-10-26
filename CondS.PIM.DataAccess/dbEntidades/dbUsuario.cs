@@ -10,6 +10,7 @@ namespace CondS.PIM.DataAccess.dbEntidades
         public string Senha { get; set; }
         public string Tipo { get; set; }
         public DateTime DataCadastro { get; set; }
+
         //---------------------------------------------
 
         public void Cadastrar(usuarioMOD dadosDaTela)
